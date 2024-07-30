@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="63.178">
+    <testcase classname="Trying to login into the webpage using invalid data" name="Sign in with invalid credential details" time="14.569">
+        <system-out><![CDATA[Given I am on the sign-in page..............................................passed
+When I enter invalid credentials............................................passed
+And I try to sign in into the account.......................................passed
+Then I should get a error message...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Trying to login into the webpage using invalid data" name="Try to Sign up with an existing email" time="12.757">
+        <system-out><![CDATA[Given I am on the sign-up page..............................................passed
+When I enter details with an existing email.................................passed
+When I try to submit the form...............................................passed
+Then I should get a error as account is already present.....................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Successfully creating account and login in using the credential" name="Create a new account in sign up page" time="13.819">
+        <system-out><![CDATA[Given I am on the sign-up page..............................................passed
+When I enter valid details..................................................passed
+When I try to submit the form...............................................passed
+Then my account should be created successfully..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Successfully creating account and login in using the credential" name="Try to Sign in with the created account" time="21.651">
+        <system-out><![CDATA[Given I am trying to sign in into page......................................passed
+When I enter valid credentials..............................................passed
+And I try to sign in into the account using valid data......................passed
+Then I should be signed in successfully.....................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
